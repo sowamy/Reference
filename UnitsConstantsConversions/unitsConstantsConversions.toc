@@ -1,0 +1,31 @@
+\contentsline {section}{Introduction}{}
+\contentsline {section}{\numberline {1}Semiconductor Physics, Materials, and Properties}{1}
+\contentsline {subsection}{\numberline {1.1}Semiconductor Properties and Constants}{1}
+\contentsline {subsubsection}{\numberline {1.1.1}Common Semiconductor Constants}{1}
+\contentsline {subsubsection}{\numberline {1.1.2}Boltzmann's Constant}{1}
+\contentsline {subsubsection}{\numberline {1.1.3}Einstein's Relation}{1}
+\contentsline {subsubsection}{\numberline {1.1.4}Conductance}{1}
+\contentsline {subsubsection}{\numberline {1.1.5}Resistivity}{2}
+\contentsline {subsubsection}{\numberline {1.1.6}Intrinsic Carrier Concentration}{2}
+\contentsline {subsubsection}{\numberline {1.1.7}Fundamental Relationship Between Electron and Hole Concentration}{2}
+\contentsline {paragraph}{\numberline {1.1.7.1}n-type}{2}
+\contentsline {paragraph}{\numberline {1.1.7.2}p-type}{2}
+\contentsline {subsubsection}{\numberline {1.1.8}Excess Carriers}{3}
+\contentsline {subsection}{\numberline {1.2}Current in Semiconductors}{4}
+\contentsline {subsubsection}{\numberline {1.2.1}Drift Velocity}{4}
+\contentsline {subsubsection}{\numberline {1.2.2}Drift Current Density}{5}
+\contentsline {subsubsection}{\numberline {1.2.3}Diffusion Current Density}{6}
+\contentsline {paragraph}{\numberline {1.2.3.1}Diffusion Current Density due to the Flow of Electrons}{6}
+\contentsline {paragraph}{\numberline {1.2.3.2}Diffusion Current Density due to the Flow of Holes}{6}
+\contentsline {section}{\numberline {2}Diodes}{7}
+\contentsline {subsection}{\numberline {2.1}Modes of Operation}{7}
+\contentsline {subsection}{\numberline {2.2}Equilibrium}{7}
+\contentsline {subsubsection}{\numberline {2.2.1}Built-in Potential Barrier}{7}
+\contentsline {subsubsection}{\numberline {2.2.2}Thermal Voltage at Room Temperature}{7}
+\contentsline {subsection}{\numberline {2.3}Forward-Biased}{8}
+\contentsline {subsection}{\numberline {2.4}Reversed-Biased}{9}
+\contentsline {subsubsection}{\numberline {2.4.1}Junction Capacitance}{9}
+\contentsline {subsubsection}{\numberline {2.4.2}Reverse-Bias Saturation Current}{9}
+\contentsline {section}{\numberline {3}Metal Oxide Semiconductor - Field Effect Transistors (MOSFET)}{9}
+\contentsline {section}{Variables}{i}
+\contentsline {section}{Glossary}{ii}
