@@ -1,0 +1,195 @@
+\documentclass{article}
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+% Packages
+\usepackage[margin=1in,includefoot]{geometry}
+\usepackage{enumitem}
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\begin{document}
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+% Title Page
+\title{\LaTeX  Reference}
+\author{Angelino Lefevers}
+\maketitle
+\thispagestyle{empty}
+\cleardoublepage
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+% Table of Contents
+\tableofcontents
+\thispagestyle{empty}
+\cleardoublepage
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+% Introduction
+\setcounter{page}{1}
+\section{Introduction}
+Just throwing together some concepts and examples for later reference
+\cleardoublepage
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+% Basic Layout
+\section{Basic Layout}
+\begin{verbatim}
+\documentclass{article}
+\begin{document}
+\end{document}
+\end{verbatim}
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+% Title Page
+\cleardoublepage
+\section{Title Page}
+
+% -- Custom Title Page Layout
+\subsection{Custom Title Page Layout}
+\begin{verbatim}
+\begin{titlepage}
+.
+\end{titlepage}
+\end{verbatim}
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+% Page Layout
+\cleardoublepage
+\section{Page Layout}
+
+% -- Alignment
+\subsection{Alignment}
+
+\subsubsection{Center}
+\begin{verbatim}
+\begin{center}
+.
+\end{center}
+\end{verbatim}
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+% Object Organization
+\cleardoublepage
+\section{Object Organization}
+
+% Lists
+\subsection{Bullet Points}
+TEXT
+\begin{itemize}
+	\item Text
+	\item Text
+	\item Text
+		\begin{itemize}
+			\item text
+			\item text
+		\end{itemize}
+	\item Text
+\end{itemize}
+
+\begin{verbatim}
+\begin{itemize}
+	\item Text
+	\item Text
+	\item Text
+		\begin{itemize}
+			\item text
+			\item text
+		\end{itemize}
+	\item Text
+\end{itemize}
+\end{verbatim}
+
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+% Mathematics
+\cleardoublepage
+\section{Mathematics}
+
+\subsection{Miscellaneous}
+\subsubsection{Tilda / Caret Over Symbol}
+$\hat{X}$
+\begin{itemize}
+	\item \begin{verbatim} \hat{X} \end{verbatim}
+\end{itemize}
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+% Miscellaneous
+\cleardoublepage
+\section{Miscellaneous}
+
+\subsection{Print \LaTeX Commands Without Compiling}
+\begin{verbatim}
+\ begin{verbatim}
+.
+\ end{verbatim}
+\end{verbatim}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

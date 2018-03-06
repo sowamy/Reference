@@ -1,0 +1,7 @@
+\contentsline {section}{Introduction}{}
+\contentsline {section}{\numberline {1}General Equations}{1}
+\contentsline {subsection}{\numberline {1.1}Power and Energy}{1}
+\contentsline {subsubsection}{\numberline {1.1.1}Instantaneous Power}{1}
+\contentsline {subsubsection}{\numberline {1.1.2}Average Power}{1}
+\contentsline {section}{Variables}{i}
+\contentsline {section}{Glossary}{ii}

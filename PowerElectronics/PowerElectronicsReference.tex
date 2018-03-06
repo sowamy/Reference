@@ -1,0 +1,180 @@
+\documentclass{article}
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+% Packages
+\usepackage[margin=1in,includefoot]{geometry}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{titlesec}
+\usepackage{amsmath}
+\usepackage{empheq}
+\usepackage{imakeidx}
+\usepackage[utf8]{inputenc}
+\usepackage{color}
+\usepackage[acronym,style=tree]{glossaries}
+\usepackage[automake]{glossaries-extra}
+\usepackage{graphicx}
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\graphicspath{{./Images/}}
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+% Sets automatic numbering system in \paragraph
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+% Custom Box for Mathematical Formulae
+\definecolor{myblue}{rgb}{.8, .8, 1}
+\newlength\mytemplen
+\newsavebox\mytempbox
+\makeatletter
+\newcommand\mybluebox{%
+    \@ifnextchar[%]
+       {\@mybluebox}%
+       {\@mybluebox[0pt]}}
+\def\@mybluebox[#1]{%
+    \@ifnextchar[%]
+       {\@@mybluebox[#1]}%
+       {\@@mybluebox[#1][0pt]}}
+\def\@@mybluebox[#1][#2]#3{
+    \sbox\mytempbox{#3}%
+    \mytemplen\ht\mytempbox
+    \advance\mytemplen #1\relax
+    \ht\mytempbox\mytemplen
+    \mytemplen\dp\mytempbox
+    \advance\mytemplen #2\relax
+    \dp\mytempbox\mytemplen
+    \colorbox{myblue}{\hspace{1em}\usebox{\mytempbox}\hspace{1em}}}
+\makeatother
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+% Allows for the creation of the glossary
+\makeglossaries
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+% Glossary Terms
+
+% -- Instantaneous Voltage
+\newglossaryentry{Instantaneous Voltage}
+{
+	name=Instantaneous Voltage,
+	description={The voltage across two reference points at instantaneous time t.}
+}
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+% Variables
+\newacronym{v(t)}{v(t)}{Instantaneous Voltage}
+\newacronym{i(t)}{i(t)}{Instantaneous Current}
+\newacronym{p(t)}{p(t)}{Instantaneous Power}
+\newacronym{P}{P}{Average Power}
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+% Index Stuff
+\makeindex[columns=1]
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\begin{document}
+\pagenumbering{gobble}
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+% Title Page
+\title{Power Electronics Reference}
+\author{Angelino Lefevers}
+\maketitle
+\thispagestyle{empty}
+\cleardoublepage
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+% Table of Contents
+\tableofcontents
+\thispagestyle{empty}
+\cleardoublepage
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+% Introduction
+\section*{Introduction}
+\addcontentsline{toc}{section}{Introduction}
+Just throwing together some concepts and examples for later reference
+\cleardoublepage
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+% --- --- --- --- --- --- --- ---  General Equations --- --- --- --- --- --- --- --- 
+\section{General Equations}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+% Power and Energy
+\subsection{Power and Energy}
+
+% Instantaneous Power
+\subsubsection{Instantaneous Power}
+This value is a positive real number if the element is supplying power, or is a negative real number if the element is consuming power.
+
+\begin{empheq}[box={\mybluebox[5pt]}]{equation*}
+p(t)=v(t)i(t)\quad(W)
+\end{empheq}
+
+\begin{itemize}
+\item p(t) := Power at time t. (W) \index{Instantaneous Power}
+\item v(t) := Voltage at time t. (V)
+\item i(t) := Current at time t. (A)
+\end{itemize}
+
+% Average Power
+\subsubsection{Average Power}
+
+\begin{empheq}[box={\mybluebox[5pt]}]{equation*}
+P=\frac{1}{T}\int_{t_o}^{t_o+T}p(t)dt\quad(W)
+\end{empheq}
+
+\begin{empheq}[box={\mybluebox[5pt]}]{equation*}
+P=\frac{1}{T}\int_{t_o}^{t_o+T}v(t)i(t)dt\quad(W)
+\end{empheq}
+
+\begin{empheq}[box={\mybluebox[5pt]}]{equation*}
+P=\frac{W}{T}\quad(W)
+\end{empheq}
+
+\begin{itemize}
+\item P := Average power (W)
+\item p(t) := Instantaneous Power (W)
+\item v(t) := Instantaneous Voltage (V)
+\item i(t) := Instantaneous Current (A)
+\item T := Final time of average (Period in periodic sinusoidal signal) (s)
+\item $t_o$ := Initial time of average (s)
+\item W := Work (J)
+\end{itemize}
+
+% Energy
+\subsubsection{Energy}
+
+\begin{empheq}[box={\mybluebox[5pt]}]{equation*}
+W=\int_{t_1}^{t_2}p(t)dt\quad(J)
+\end{empheq}
+
+\begin{itemize}
+\item W := Work (J)
+\item p(t) := Instantaneous Power. (W)
+\end{itemize}
+
+% RMS Values
+\subsubsection{RMS Values}
+
+\begin{empheq}[box={\mybluebox[5pt]}]{equation*}
+V_{RMS}=\sqrt{\frac{1}{T}\int_{t_o}^{t_o+T}v^2(t)dt}
+\end{empheq}
+
+\begin{empheq}[box={\mybluebox[5pt]}]{equation*}
+I_{RMS}=\sqrt{\frac{1}{T}\int_{t_o}^{t_o+T}i^2(t)dt}
+\end{empheq}
+
+\clearpage
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+% Appendices, Indexes, and Glossaries
+\pagenumbering{roman}
+\setcounter{page}{1}
+
+\addcontentsline{toc}{section}{Variables}
+\printglossary[type=\acronymtype,nonumberlist,title={Variables}]
+\clearpage
+\addcontentsline{toc}{section}{Glossary}
+\glsaddall
+\printglossary[nonumberlist]
+\clearpage
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\printindex
+\clearpage
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\end{document}
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
