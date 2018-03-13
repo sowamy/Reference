@@ -1,7 +1,9 @@
 \documentclass{article}
 %----------------------------------------------------------------
 % Packages
+\usepackage[margin=0.5in]{geometry}
 \usepackage{hyperref}
+\usepackage{url}
 %----------------------------------------------------------------
 % Table of contents link setup
 \hypersetup{
@@ -36,12 +38,66 @@
 This reference will compile a large amount of data and information of SPICE circuit sofware, a variety of distributions of SPICE simulation software, and a variety of distributions of SPICE graphical software. This reference will focus on the compilation and organization of this data and information. This reference will also act as an index of many resources which have been used to find this information, and will be notated in the bibliography of this reference. This reference is not purely written by the author notated on the title page and directly uses text and images from the resources noted in the bibliography section at the end.
 \cleardoublepage 
 %----------------------------------------------------------------
+% --- --- General Information about SPICE -- -- 
+\section{General Information about SPICE}
+This section presents general information about the history and general use of SPICE.
 \pagenumbering{arabic}
 \setcounter{page}{1}
 %----------------------------------------------------------------
-% --- --- General Information about SPICE -- -- 
-\section{General Information about SPICE}
+% What is SPICE?
+\subsection{What is SPICE?}
+SPICE is a powerful general purpose analog circuit simulator that is used to verify circuit designs and to predict the circuit behavior. This is of particular importance for integrated circuits. It was for this reason that SPICE was originally developed at the Electronics Research Laboratory of the University of California, Berkeley (1975), as its name implies: \\ 
+\begin{center}
+\textbf{S}imulation \textbf{P}rogram for \textbf{I}ntegrated \textbf{C}ircuits \textbf{E}mphasis. \cite{PennEngineering}
+\end{center}
+\cleardoublepage
 %----------------------------------------------------------------
-% 
+% --- --- SPICE Overview --- --- 
+\section{SPICE Overview}
+This section begins to present the things that SPICE are able to do and how it's able to do those things. 
+%----------------------------------------------------------------
+% Types of Circuit Analysis
+\subsection{Types of Circuit Analysis}
+SPICE allows for a variety of types of simulation to be conducted on a circuit. Each types of analysis allows an engineer to verify and analyze the operation of a physical circuit. These analysis also help an engineer to identify inconsistencies between ideal circuit calculations and the operation of empirical circuitry.
+\begin{itemize}
+\item Non-Linear DC
+\item Non-Linear AC 
+\item Linear Transient
+\item Noise
+\item Sensitivity
+\item Distortion
+\item Fourier
+\item Monte Carlo
+\end{itemize}
+\cleardoublepage
+%----------------------------------------------------------------
+\subsection{Standard Spice Components}
+\begin{itemize}
+\item Independent/Dependent Voltage Sources
+\item Independent/Dependent Current Sources
+\item Resistors
+\item Capacitors
+\item Inductors
+\item Mutual Inductors
+\item Transmission Lines
+\item Operational Amplifiers
+\item Switches
+\item Diodes
+\item Bipolar Transistors
+\item MOS Transistors
+\item JFET Transistors
+\item MESFET Transistors
+\item Digital Gates
+\end{itemize}
+\cleardoublepage
+%----------------------------------------------------------------
+% Appendices, Indexes, and Glossaries
+\pagenumbering{roman}
+\setcounter{page}{1}
+%----------------------------------------------------------------
+% Bibliography
+\addcontentsline{toc}{section}{References}
+\bibliographystyle{plain}
+\bibliography{SPICE_Bibliography}
 %----------------------------------------------------------------
 \end{document}
