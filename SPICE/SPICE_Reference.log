@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.3.13)  13 MAR 2018 18:26
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.3.13)  13 MAR 2018 21:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -192,7 +192,11 @@ Package newfloat Info: New float `Script' with options `' on input line 11.
 Package newfloat Info: float type `Script'=16 on input line 11.
 Package hyperref Info: Option `colorlinks' set `true' on input line 20.
 
-(./SPICE_Reference.aux)
+(./SPICE_Reference.aux
+
+LaTeX Warning: Label `TITLE1' multiply defined.
+
+)
 \openout1 = `SPICE_Reference.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
@@ -367,25 +371,59 @@ Package hyperref Info: bookmark level for unknown Script defaults to 0 on input
  line 193.
 [4
 
+]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 210.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 220.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 233.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 242.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 260.
+See the caption package documentation for explanation.
+
+[5
+
+] [6
+
 ] (./SPICE_Reference.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 209.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 282.
  [1
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 209.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 282.
  (./SPICE_Reference.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 209.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 209.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 282.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 282.
 Package rerunfilecheck Info: File `SPICE_Reference.out' has not changed.
-(rerunfilecheck)             Checksum: F644254BB241F8D0B9CE19B6E7929445;538.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 209.
+(rerunfilecheck)             Checksum: DE6F842A6A60DE79260B42CA40A2848F;825.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 282.
  ) 
 Here is how much of TeX's memory you used:
- 6493 strings out of 494985
- 99842 string characters out of 6180356
- 189522 words of memory out of 5000000
- 9671 multiletter control sequences out of 15000+600000
- 7895 words of font info for 28 fonts, out of 8000000 for 9000
+ 6517 strings out of 494985
+ 100105 string characters out of 6180356
+ 190793 words of memory out of 5000000
+ 9681 multiletter control sequences out of 15000+600000
+ 8241 words of font info for 29 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  36i,8n,38p,664b,363s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
@@ -396,11 +434,12 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy7.pfb>
-Output written on SPICE_Reference.pdf (8 pages, 112886 bytes).
+msfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmti10.pfb>
+Output written on SPICE_Reference.pdf (10 pages, 128882 bytes).
 PDF statistics:
- 134 PDF objects out of 1000 (max. 8388607)
- 113 compressed objects within 2 object streams
- 21 named destinations out of 1000 (max. 500000)
- 73 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 184 PDF objects out of 1000 (max. 8388607)
+ 160 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -5,4 +5,9 @@ Jan~Van der Spiegel.
 \newblock Spice - a brief tutorial.
 \newblock http://www.seas.upenn.edu/~jan/spice/spice.overview.html.
 
+\bibitem{ngspiceManual27}
+Paolo~Nenzi Holger~Vogt, Marcel~Hendrix.
+\newblock Ngspice users manual.
+\newblock https://sourceforge.net/projects/ngspice/files/.
+
 \end{thebibliography}

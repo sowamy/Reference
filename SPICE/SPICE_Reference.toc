@@ -6,4 +6,9 @@
 \contentsline {subsection}{\numberline {2.2}Scaling Factors}{2}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Standard Components}{2}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}SPICE Script Layout}{4}{subsection.2.4}
-\contentsline {section}{References}{i}{Script.1}
+\contentsline {section}{\numberline {3}General Script}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}Comments}{5}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Circuit Title}{5}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}.END}{5}{subsection.3.3}
+\contentsline {section}{\numberline {4}Standard Circuit Elements}{6}{section.4}
+\contentsline {section}{References}{i}{section.4}

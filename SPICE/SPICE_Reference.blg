@@ -5,45 +5,47 @@ The style file: plain.bst
 Database file #1: SPICE_Bibliography.bib
 Warning--entry type for "PennEngineering" isn't style-file defined
 --line 1 of file SPICE_Bibliography.bib
-You've used 1 entry,
+Warning--entry type for "ngspiceManual27" isn't style-file defined
+--line 9 of file SPICE_Bibliography.bib
+You've used 2 entries,
             2118 wiz_defined-function locations,
-            503 strings with 4166 characters,
-and the built_in function-call counts, 224 in all, are:
-= -- 19
-> -- 7
+            508 strings with 4303 characters,
+and the built_in function-call counts, 428 in all, are:
+= -- 38
+> -- 14
 < -- 0
-+ -- 3
-- -- 2
-* -- 7
-:= -- 43
-add.period$ -- 3
-call.type$ -- 1
-change.case$ -- 4
++ -- 6
+- -- 4
+* -- 12
+:= -- 77
+add.period$ -- 6
+call.type$ -- 2
+change.case$ -- 8
 chr.to.int$ -- 0
-cite$ -- 1
-duplicate$ -- 7
-empty$ -- 23
-format.name$ -- 2
-if$ -- 46
+cite$ -- 2
+duplicate$ -- 14
+empty$ -- 45
+format.name$ -- 4
+if$ -- 91
 int.to.chr$ -- 0
-int.to.str$ -- 1
+int.to.str$ -- 2
 missing$ -- 0
-newline$ -- 8
-num.names$ -- 2
-pop$ -- 8
+newline$ -- 13
+num.names$ -- 4
+pop$ -- 16
 preamble$ -- 1
-purify$ -- 3
+purify$ -- 6
 quote$ -- 0
-skip$ -- 8
+skip$ -- 16
 stack$ -- 0
-substring$ -- 5
-swap$ -- 1
+substring$ -- 10
+swap$ -- 2
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 4
+type$ -- 8
 warning$ -- 0
-while$ -- 2
-width$ -- 2
-write$ -- 11
-(There was 1 warning)
+while$ -- 4
+width$ -- 3
+write$ -- 20
+(There were 2 warnings)

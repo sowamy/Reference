@@ -112,7 +112,7 @@ f & femto & $10^{-15}$ \\
 %----------------------------------------------------------------
 % Standard SPICE Components
 \subsection{Standard Components}
-SPICE simulates circuits by using combinations of standard sets of components which are featured within the SPICE simulating software. SPICE circuitry can also use custom components created by 3rd parties to reflect the operation of virtually any piece of hardware, whether it is realizable physically or not.  
+SPICE simulates circuits by using combinations of standard sets of components which are featured within the SPICE simulating software. SPICE circuitry can also use custom components created by 3rd parties to reflect the operation of virtually any piece of hardware, whether it is realizable physically or not. Each component in a SPICE circuit is represented by a name, the first letter of which describes the type of component. The types of components that can be implemented in a SPICE circuit are listed below with the preliminary letter which corresponds to each use.  
 \begin{center}
 \begin{tabular}{||c|c||}
 \hline
@@ -177,21 +177,93 @@ Z & Metal Semiconductor Field Effect Transistor (MESFET) \\
 %----------------------------------------------------------------
 % SPICE Script Layout
 \subsection{SPICE Script Layout}
-Below in Script \ref{fg:A} lies the pseudocode of a SPICE program. This illustrates how the general SPICE program is partitioned and where each functional element lies.
+Below in Script \ref{LAYOUT} lies the pseudocode of a SPICE program. This illustrates how the general SPICE program is partitioned and where each functional element lies.
 \begin{center}
 \fbox{
   \parbox{8cm}{
-    TITLE STATEMENT					\\
-    ELEMENT STATEMENTS				\\
+    TITLE 							\\
+    ELEMENTS						\\
     .								\\
     .								\\
-    COMMAND (CONTROL) STATEMENTS	\\
+    CONTROL STATEMENTS				\\
     OUTPUT STATEMENTS				\\
     .END 
   }
 }
-\captionof{Script}{SPICE Program Layout (Pseudocode)\label{fg:A}}
+\captionof{Script}{SPICE Program Layout (Pseudocode)\label{LAYOUT}}
 \end{center}
+\cleardoublepage
+%----------------------------------------------------------------
+% --- --- SPICE General Script --- ---
+\section{General Script}
+%----------------------------------------------------------------
+% SPICE Comments
+\subsection{Comments}
+No script is complete without the ability to add comments into the original text. This allows further description of elements, functions, variables, and the ideas that go into implemented functionality. SPICE has two ways to insert comments into its code. The first way is illustrated in \ref{COMMENT1}, this method comments the entire line of text after the \textbf{*} symbol. The other way to comment in SPICE is to comment the remainder of a line, this is done with the \textbf{\$} symbol before the commented code.
+
+\begin{center}
+\fbox{
+  \parbox{8cm}{
+		* \textit{comment}
+  }
+}
+\captionof{Script}{Line Commenting\label{COMMENT1}}
+\end{center}
+
+\begin{center}
+\fbox{
+  \parbox{8cm}{
+		R2 0 1 100 \$ \textit{comment} \\
+		R3 1 2 200 \$ \textit{comment}
+  }
+}
+\captionof{Script}{End of Line Comment\label{TITLE1}}
+\end{center}
+%----------------------------------------------------------------
+% Circuit Title
+\subsection{Circuit Title}
+Each circuit description must begin with a title. The general form a title is described is illustrated below in Script \ref{TITLE1}. The title can also be written as is without any sort of tag as displayed in Script \ref{TITLE2}
+% This allows for the script to be accessed externally by other files, and gives some description of the operation of the circuit.
+\begin{center}
+\fbox{
+  \parbox{8cm}{
+		.TITLE \textit{title} 
+  }
+}
+\captionof{Script}{Declaring a Title with Tag TITLE\label{TITLE1}}
+\end{center}
+
+\begin{center}
+\fbox{
+  \parbox{8cm}{
+		\textit{title}
+  }
+}
+\captionof{Script}{Short Way to Declare a Title (Without Tag)\label{TITLE2}}
+\end{center}
+
+% Arguments
+\begin{itemize}
+\item \textit{title} := Title of circuit
+\end{itemize}
+%----------------------------------------------------------------
+% .END
+\subsection{.END}
+Every circuit description must be finished by an \textbf{.END} tag, which signifies the end of the script. This end tag is illustrated below in Script \ref{END}, and is as simple as it looks both there and in Script \ref{END}. There are no arguments that go into this tag and is to be used as is.
+
+\begin{center}
+\fbox{
+  \parbox{8cm}{
+		.END
+  }
+}
+\captionof{Script}{End Script Tag\label{END}}
+\end{center}
+
+\cleardoublepage
+%----------------------------------------------------------------
+% --- --- SPICE Circuit Elements --- ---
+\section{Standard Circuit Elements} 
 \cleardoublepage
 %----------------------------------------------------------------
 % Appendices, Indexes, and Glossaries
@@ -200,6 +272,7 @@ Below in Script \ref{fg:A} lies the pseudocode of a SPICE program. This illustra
 %----------------------------------------------------------------
 % Citations (So that all references show in the bibliography)
 \nocite{PennEngineering}	
+\nocite{ngspiceManual27}
 %----------------------------------------------------------------
 % Bibliography
 \addcontentsline{toc}{section}{References}
