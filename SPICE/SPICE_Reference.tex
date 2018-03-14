@@ -2,8 +2,13 @@
 %----------------------------------------------------------------
 % Packages
 \usepackage[margin=0.5in]{geometry}
+\usepackage{caption}
 \usepackage{hyperref}
 \usepackage{url}
+%----------------------------------------------------------------
+% Caption Types
+\DeclareCaptionType{Table}
+\DeclareCaptionType{Script}
 %----------------------------------------------------------------
 % Table of contents link setup
 \hypersetup{
@@ -18,6 +23,8 @@
 
 %----------------------------------------------------------------
 \begin{document}
+\fboxsep=8pt\relax
+\fboxrule=2pt\relax
 \pagenumbering{gobble}
 %----------------------------------------------------------------
 % Title Page
@@ -48,52 +55,151 @@ This section presents general information about the history and general use of S
 \subsection{What is SPICE?}
 SPICE is a powerful general purpose analog circuit simulator that is used to verify circuit designs and to predict the circuit behavior. This is of particular importance for integrated circuits. It was for this reason that SPICE was originally developed at the Electronics Research Laboratory of the University of California, Berkeley (1975), as its name implies: \\ 
 \begin{center}
-\textbf{S}imulation \textbf{P}rogram for \textbf{I}ntegrated \textbf{C}ircuits \textbf{E}mphasis. \cite{PennEngineering}
+\textbf{S}imulation \textbf{P}rogram for \textbf{I}ntegrated \textbf{C}ircuits \textbf{E}mphasis. 
 \end{center}
 \cleardoublepage
 %----------------------------------------------------------------
 % --- --- SPICE Overview --- --- 
-\section{SPICE Overview}
+\section{Overview}
 This section begins to present the things that SPICE are able to do and how it's able to do those things. 
 %----------------------------------------------------------------
 % Types of Circuit Analysis
 \subsection{Types of Circuit Analysis}
 SPICE allows for a variety of types of simulation to be conducted on a circuit. Each types of analysis allows an engineer to verify and analyze the operation of a physical circuit. These analysis also help an engineer to identify inconsistencies between ideal circuit calculations and the operation of empirical circuitry.
 \begin{itemize}
-\item Non-Linear DC
-\item Non-Linear AC 
-\item Linear Transient
+\item DC
+\item AC Small Signal 
+\item Transient
+\item Pole Zero
 \item Noise
 \item Sensitivity
 \item Distortion
 \item Fourier
 \item Monte Carlo
 \end{itemize}
+%----------------------------------------------------------------
+% SPICE Scaling Factors
+\subsection{Scaling Factors}
+SPICE uses a set of characters to scale the magnitudes which describe element and circuit characteristics. When a magnitude in spice is appended with one of these characters, it is scaled accordingly.
+\begin{center}
+\begin{tabular}{||c|c|c||}
+\hline
+Suffix & Name & Factor \\
+\hline \hline
+T & Tera & $10^{12}$ \\
+\hline
+G & Giga & $10^9$ \\
+\hline
+Meg & Mega & $10^6$ \\
+\hline
+K & Kilo & $10^3$ \\
+\hline
+mil & Mil & $25.4x10^{-6}$ \\
+\hline
+m & milli & $10^{-3}$ \\
+\hline
+u & micro & $10^{-6}$ \\
+\hline
+n & nano & $10^{-9}$ \\ 
+\hline
+p & pico & $10^{-12}$ \\
+\hline
+f & femto & $10^{-15}$ \\
+\hline
+\end{tabular}
+\end{center}
+\captionof{Table}{SPICE Scaling Factors}
+%----------------------------------------------------------------
+% Standard SPICE Components
+\subsection{Standard Components}
+SPICE simulates circuits by using combinations of standard sets of components which are featured within the SPICE simulating software. SPICE circuitry can also use custom components created by 3rd parties to reflect the operation of virtually any piece of hardware, whether it is realizable physically or not.  
+\begin{center}
+\begin{tabular}{||c|c||}
+\hline
+Letter & Element Description \\
+\hline \hline
+A & XSPICE Code Model \\
+\hline
+B & Behavioral Source \\
+\hline
+C & Capacitor \\
+\hline
+D & Diode \\
+\hline
+E & Voltage-Controlled Voltage Source \\
+\hline
+F & Current-Controlled Current Source \\
+\hline
+G & Voltage-Controlled Current Source \\
+\hline
+H & Current-Controlled Voltage Source \\
+\hline
+I & Current Source \\
+\hline
+J & Junction Field Effect Transistor (JFET) \\
+\hline
+K & Coupled (Mutual) Inductors \\
+\hline
+L & Inductor \\
+\hline
+M & Metal Oxide Field Effect Transistor (MOSFET) \\
+\hline
+N & Numerical Device for GSS \\
+\hline
+O & Lossy Transmission Line \\
+\hline
+P & Coupled Multiconductor Line (CPL) \\
+\hline
+Q & Bipolar Junction Transistor (BJT) \\
+\hline
+R & Resistor \\
+\hline
+S & Switch (Voltage Controlled) \\
+\hline
+T & Lossy Transmission Line \\
+\hline
+U & Uniformly Distributed RC Line \\
+\hline
+V & Voltage Source \\
+\hline
+W & Switch (Current Controlled) \\
+\hline
+X & Subcircuit\\
+\hline
+Y & Single Lossy Transmission Line (TXL) \\
+\hline
+Z & Metal Semiconductor Field Effect Transistor (MESFET) \\
+\hline
+\end{tabular}
+\end{center}
+\captionof{Table}{SPICE Elements}
 \cleardoublepage
 %----------------------------------------------------------------
-\subsection{Standard Spice Components}
-\begin{itemize}
-\item Independent/Dependent Voltage Sources
-\item Independent/Dependent Current Sources
-\item Resistors
-\item Capacitors
-\item Inductors
-\item Mutual Inductors
-\item Transmission Lines
-\item Operational Amplifiers
-\item Switches
-\item Diodes
-\item Bipolar Transistors
-\item MOS Transistors
-\item JFET Transistors
-\item MESFET Transistors
-\item Digital Gates
-\end{itemize}
+% SPICE Script Layout
+\subsection{SPICE Script Layout}
+Below in Script \ref{fg:A} lies the pseudocode of a SPICE program. This illustrates how the general SPICE program is partitioned and where each functional element lies.
+\begin{center}
+\fbox{
+  \parbox{8cm}{
+    TITLE STATEMENT					\\
+    ELEMENT STATEMENTS				\\
+    .								\\
+    .								\\
+    COMMAND (CONTROL) STATEMENTS	\\
+    OUTPUT STATEMENTS				\\
+    .END 
+  }
+}
+\captionof{Script}{SPICE Program Layout (Pseudocode)\label{fg:A}}
+\end{center}
 \cleardoublepage
 %----------------------------------------------------------------
 % Appendices, Indexes, and Glossaries
 \pagenumbering{roman}
 \setcounter{page}{1}
+%----------------------------------------------------------------
+% Citations (So that all references show in the bibliography)
+\nocite{PennEngineering}	
 %----------------------------------------------------------------
 % Bibliography
 \addcontentsline{toc}{section}{References}

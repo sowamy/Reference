@@ -1,7 +1,9 @@
 \contentsline {section}{Introduction}{}{section*.2}
 \contentsline {section}{\numberline {1}General Information about SPICE}{1}{section.1}
 \contentsline {subsection}{\numberline {1.1}What is SPICE?}{1}{subsection.1.1}
-\contentsline {section}{\numberline {2}SPICE Overview}{2}{section.2}
+\contentsline {section}{\numberline {2}Overview}{2}{section.2}
 \contentsline {subsection}{\numberline {2.1}Types of Circuit Analysis}{2}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Standard Spice Components}{3}{subsection.2.2}
-\contentsline {section}{References}{i}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.2}Scaling Factors}{2}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Standard Components}{2}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}SPICE Script Layout}{4}{subsection.2.4}
+\contentsline {section}{References}{i}{Script.1}
