@@ -26,6 +26,7 @@
 \fboxsep=8pt\relax
 \fboxrule=2pt\relax
 \pagenumbering{gobble}
+\renewcommand{\labelitemi}{-}
 %----------------------------------------------------------------
 % Title Page
 \title{SPICE Reference}
@@ -261,6 +262,25 @@ Every circuit description must be finished by an \textbf{.END} tag, which signif
 \end{center}
 
 \cleardoublepage
+%----------------------------------------------------------------
+% SPICE Device Models
+\subsection{Device Models}
+
+\begin{center}
+\fbox{
+  \parbox{11cm}{
+		.MODEL \textit{modelName} \textit{modelType} (\textit{pname1} = \textit{pval1} \textit{pname2}=\textit{pval2} ... )
+  }
+}
+\captionof{Script}{Create a Device Model\label{END}}
+
+\begin{itemize}
+\item \textit{modelName} := Name of the model
+\item \textit{modelType} := Type of model
+\item \textit{pname} := Device Parameter 
+\item \textit{pval} := Value the parameter is to be set to
+\end{itemize}
+\end{center}
 %----------------------------------------------------------------
 % --- --- SPICE Circuit Elements --- ---
 \section{Standard Circuit Elements} 
