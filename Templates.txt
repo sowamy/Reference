@@ -1,0 +1,139 @@
+\documentclass{article}
+%---------------------------------------------------------------------------------------------------------------------------------
+% Packages
+\usepackage[margin=1in,includefoot]{geometry}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{titlesec}
+\usepackage{amsmath}
+\usepackage{empheq}
+\usepackage{imakeidx}
+\usepackage[utf8]{inputenc}
+\usepackage{color}
+\usepackage[acronym,toc,style=tree]{glossaries}
+\usepackage[automake]{glossaries-extra}
+\usepackage{graphicx}
+\usepackage{hyperref}
+%---------------------------------------------------------------------------------------------------------------------------------
+\graphicspath{{./Images/}}
+%---------------------------------------------------------------------------------------------------------------------------------
+% TOC Hyperlink Setup
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=blue,
+    urlcolor=black
+}
+%---------------------------------------------------------------------------------------------------------------------------------
+% Sets automatic numbering system in \paragraph
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+%---------------------------------------------------------------------------------------------------------------------------------
+% Custom Box for Mathematical Formulae
+\definecolor{myblue}{rgb}{.8, .8, 1}
+\newlength\mytemplen
+\newsavebox\mytempbox
+\makeatletter
+\newcommand\mybluebox{%
+    \@ifnextchar[%]
+       {\@mybluebox}%
+       {\@mybluebox[0pt]}}
+\def\@mybluebox[#1]{%
+    \@ifnextchar[%]
+       {\@@mybluebox[#1]}%
+       {\@@mybluebox[#1][0pt]}}
+\def\@@mybluebox[#1][#2]#3{
+    \sbox\mytempbox{#3}%
+    \mytemplen\ht\mytempbox
+    \advance\mytemplen #1\relax
+    \ht\mytempbox\mytemplen
+    \mytemplen\dp\mytempbox
+    \advance\mytemplen #2\relax
+    \dp\mytempbox\mytemplen
+    \colorbox{myblue}{\hspace{1em}\usebox{\mytempbox}\hspace{1em}}}
+\makeatother
+%---------------------------------------------------------------------------------------------------------------------------------
+% Allows for the creation of the glossary
+\makeglossaries
+%---------------------------------------------------------------------------------------------------------------------------------
+% Glossary Terms
+
+% -- ***
+\newglossaryentry{***}
+{
+	name=***,
+	description={***}
+}
+%---------------------------------------------------------------------------------------------------------------------------------
+% Variables
+
+% --- ***
+\newacronym{***}{***acrshort***}{***acrlong***}
+
+%---------------------------------------------------------------------------------------------------------------------------------
+% Index Stuff
+\makeindex[columns=1]
+%---------------------------------------------------------------------------------------------------------------------------------
+\begin{document}
+\pagenumbering{gobble}
+%---------------------------------------------------------------------------------------------------------------------------------
+% Title Page
+\title{***Title***}
+\author{Angelino Lefevers}
+\maketitle
+\thispagestyle{empty}
+\cleardoublepage
+%---------------------------------------------------------------------------------------------------------------------------------
+% Table of Contents
+\tableofcontents
+\thispagestyle{empty}
+\cleardoublepage
+%---------------------------------------------------------------------------------------------------------------------------------
+% Introduction
+\section*{Introduction}
+\addcontentsline{toc}{section}{Introduction}
+***text***
+\cleardoublepage
+%---------------------------------------------------------------------------------------------------------------------------------
+% --- --- --- --- --- --- --- ---  ***section*** --- --- --- --- --- --- --- --- 
+\section{***section***}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+%---------------------------------------------------------------------------------------------------------------------------------
+% ***subsection***
+\begin{minipage}{\linewidth}
+\subsection{***subsection***}
+
+% ***subsubsection***
+\subsubsection{***subsubsection***}
+
+\begin{empheq}[box={\mybluebox[5pt]}]{equation*}
+***formula***
+\end{empheq}
+
+\begin{itemize}	%*********************************************************************
+\item \acrshort{***} := \acrlong{***} \index{\acrlong{***}}				 % ***
+\end{itemize}	%*********************************************************************
+\end{minipage}
+%---------------------------------------------------------------------------------------------------------------------------------
+% Appendices, Indexes, and Glossaries
+\pagenumbering{roman}
+\setcounter{page}{1}
+
+%\addcontentsline{toc}{section}{Variables}
+\printglossary[type=\acronymtype,nonumberlist,title={Variables}]
+\clearpage
+%\addcontentsline{toc}{section}{Glossary}
+\glsaddall
+\printglossary[nonumberlist]
+\clearpage
+%---------------------------------------------------------------------------------------------------------------------------------
+\printindex
+\clearpage
+%---------------------------------------------------------------------------------------------------------------------------------
+\end{document}
+%---------------------------------------------------------------------------------------------------------------------------------
