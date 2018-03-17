@@ -157,15 +157,25 @@
 % --- Power
 \newacronym{instPower}{$\pmb{p(t)}$}{Instantaneous Power (W)}
 \newacronym{avgPower}{$\pmb{P}$}{Average Power (W)}
+\newacronym{pf}{$\pmb{pf}$}{Power Factor}
 
 % --- Work
 \newacronym{work}{$\pmb{W}$}{Work (J)}
+
+% --- Source
+\newacronym{sVoltage}{$\pmb{v_s(t)}$}{Voltage Emitted from Source (V)}
+\newacronym{sCurrent}{$\pmb{i_s(t)}$}{Current Emitted from/to a Source (A)}
+
+% --- Resistors
+\newacronym{resistance}{$\pmb{R}$}{Resistance ($\Omega$)}
+\newacronym{resAvgPower}{$\pmb{P_R}$}{Average Power Consumed by a Resistor (W)}
 
 % --- Inductance
 \newacronym{inductance}{$\pmb{L}$}{Inductance (H)}
 \newacronym{indVoltage}{$\pmb{v_L(t)}$}{Instantaneous Voltage Across an Inductor (V)}
 \newacronym{indAvgVoltage}{$\pmb{V_L}$}{Average Voltage Across and Inductor (V)}
 \newacronym{indCurrent}{$\pmb{i_L(t)}$}{Instantaneous Current Through an Inductor (A)}
+\newacronym{indInitCurrent}{$\pmb{i_L(t_o)}$}{Initial Current Through an Inductor (A)}
 \newacronym{indAvgCurrent}{$\pmb{I_L}$}{Average Current Through an Inductor (A)}
 \newacronym{indInstPower}{$\pmb{p_L(t)}$}{Instantaneous Power an Inductor Produces/Consumes (W)}
 \newacronym{indAvgPower}{$\pmb{P_L}$}{Average Power an Inductor Produces/Consumes (W)}
@@ -175,6 +185,7 @@
 % --- Capacitance
 \newacronym{capacitance}{$\pmb{C}$}{Capacitance (F)}
 \newacronym{capVoltage}{$\pmb{v_C(t)}$}{Instantaneous Voltage Across a Capacitor (V)}
+\newacronym{capInitVoltage}{$\pmb{v_C(t_o)}$}{Initial Voltage Across a Capacitor (V)}
 \newacronym{capAvgVoltage}{$\pmb{V_C}$}{Average Voltage Across a Capacitor (V)}
 \newacronym{capCurrent}{$\pmb{i_C(t)}$}{Instantaneous Current Through a Capacitor (A)}
 \newacronym{capAvgCurrent}{$\pmb{I_C}$}{Average Current Through a Capacitor(A)}
@@ -280,13 +291,13 @@ W=\int_{t_1}^{t_2}p(t)dt\quad(J)
 \subsubsection{Current/Voltage Relationship}
 
 \begin{empheq}[box={\mybluebox[5pt]}]{equation*}
-i_L(t_o+T) = \frac{1}{L}\int_{t_o}^{t_o+T}v_L(t)dt+i(t_o)
+i_L(t_o+T) = \frac{1}{L}\int_{t_o}^{t_o+T}v_L(t)dt+i_L(t_o)
 \end{empheq}
 
 \begin{itemize}	%*********************************************************************
 \item \acrshort{indCurrent} := \acrlong{indCurrent} \index{\acrlong{indCurrent}}				% iL(t)
 \item \acrshort{indVoltage} := \acrlong{indVoltage} \index{\acrlong{indVoltage}}				% vL(t)
-\item \acrshort{initCurrent} := \acrlong{initCurrent} \index{\acrlong{initCurrent}}				% i(to)
+\item \acrshort{indInitCurrent} := \acrlong{indInitCurrent} \index{\acrlong{indInitCurrent}}		% iL(to)
 \item \acrshort{inductance} := \acrlong{inductance} \index{\acrlong{inductance}}				% L
 \item \acrshort{initTime} := \acrlong{initTime}												% to
 \item \acrshort{timePeriod} := \acrlong{timePeriod}											% T
@@ -321,10 +332,10 @@ w_L(t) = \frac{1}{2}Li_L^2(t)
 \end{itemize}	%*********************************************************************
 
 \begin{empheq}[box={\mybluebox[5pt]}]{equation*}
-P_L = \frac{1}{T}\int{t_o}^{t_o+T}p_L(t)dt
+P_L = \frac{1}{T}\int_{t_o}^{t_o+T}p_L(t)dt
 \end{empheq}
 
-NOTE: The average power produced/consumed by the inductor is zero ($P_L = 0$) for each period when a periodic current is applied through the inductor.
+NOTE: The average power produced/consumed by the inductor is zero ($P_L = 0$) for each period when a periodic sinusoidal current is applied through the inductor.
 
 \begin{itemize}	%*********************************************************************
 \item \acrshort{indAvgPower} := \acrlong{indAvgPower} \index{\acrlong{indAvgPower}}		% PL
@@ -335,24 +346,170 @@ NOTE: The average power produced/consumed by the inductor is zero ($P_L = 0$) fo
 \end{minipage}
 \clearpage
 
-% RMS Values
+% Capacitors
 \begin{minipage}{\linewidth}
-\subsection{RMS Values}
+\subsection{Capacitors}
+
+% --- Current
+\subsubsection{Current/Voltage Relationship}
 
 \begin{empheq}[box={\mybluebox[5pt]}]{equation*}
-V_{RMS}=\sqrt{\frac{1}{T}\int_{t_o}^{t_o+T}v^2(t)dt}
+v_C(t_o+T) = \frac{1}{C}\int_{t_o}^{t_o+T}i_C(t)dt + v_C(t_0)
+\end{empheq}
+
+\begin{itemize}	%*********************************************************************
+\item \acrshort{capVoltage} := \acrlong{capVoltage} \index{\acrlong{capVoltage}}				% vC(t)
+\item \acrshort{capCurrent} := \acrlong{capCurrent} \index{\acrlong{capCurrent}}				% iC(t)
+\item \acrshort{capInitVoltage} := \acrlong{capInitVoltage} \index{\acrlong{capInitVoltage}}		% vC(to)
+\item \acrshort{capacitance} := \acrlong{capacitance} \index{\acrlong{capacitance}}				% C
+\item \acrshort{initTime} := \acrlong{initTime}												% to
+\item \acrshort{timePeriod} := \acrlong{timePeriod}											% T
+\end{itemize}	%*********************************************************************
+
+\begin{empheq}[box={\mybluebox[5pt]}]{equation*}
+I_C = \frac{1}{T}\int_{t_o}^{t_o+T}i_C(t)dt
+\end{empheq}
+
+NOTE: When a sinusoidal voltage is applied through a capacitor, the average current is zero ($I_C = 0$) for each period.
+
+\begin{itemize}	%*********************************************************************
+\item \acrshort{capAvgCurrent} := \acrlong{capAvgCurrent} \index{\acrlong{capAvgCurrent}}	% IC
+\item \acrshort{capCurrent} := \acrlong{capCurrent} \index{\acrlong{capCurrent}}				% iC(t)
+\item \acrshort{initTime} := \acrlong{initTime}												% to
+\item \acrshort{timePeriod} := \acrlong{timePeriod}											% T
+\end{itemize}	%*********************************************************************
+\end{minipage}
+
+% --- Power and Energy
+\begin{minipage}{\linewidth}
+\subsubsection{Power and Energy}
+
+\begin{empheq}[box={\mybluebox[5pt]}]{equation*}
+w_C(t) = \frac{1}{2}Cv_C^2(t)
+\end{empheq}
+
+\begin{itemize}	%*********************************************************************
+\item \acrshort{capInstWork} := \acrlong{capInstWork} \index{\acrlong{capInstWork}}			% wC(t)
+\item \acrshort{capVoltage} := \acrlong{capVoltage} \index{\acrlong{capVoltage}}				% vC(t)
+\item \acrshort{capacitance} := \acrlong{capacitance} \index{\acrlong{capacitance}}				% C
+\end{itemize}	%*********************************************************************
+
+\begin{empheq}[box={\mybluebox[5pt]}]{equation*}
+P_C = \frac{1}{T}\int_{t_o}^{t_o+T}p_L(t)dt
+\end{empheq}
+
+NOTE: The average power produced/consumed by a capacitor is zero ($P_C = 0$) for each period when a periodic sinusoidal current is applied through the inductor.
+
+\begin{itemize}	%*********************************************************************
+\item \acrshort{capAvgPower} := \acrlong{capAvgPower} \index{\acrlong{capAvgPower}}		% PC
+\item \acrshort{capInstPower} := \acrlong{capInstPower} \index{\acrlong{capInstPower}}		% pC(t)
+\item \acrshort{initTime} := \acrlong{initTime}												% to
+\item \acrshort{timePeriod} := \acrlong{timePeriod}											% T
+\end{itemize}	%*********************************************************************
+\end{minipage}
+\clearpage
+
+% RMS Values
+\begin{minipage}{\linewidth}
+\subsection{Root Mean Square (RMS)}
+The Root Mean Square (RMS) magnitude of voltages and currents identify the effective power applied to a circuit from a source. This is usually compared to the power consumed by each element in the circuit to calculate the efficiency of a circuit.
+
+\begin{empheq}[box={\mybluebox[5pt]}]{equation*}
+V_{RMS}=\sqrt{\frac{1}{T}\int_{t_o}^{t_o+T}v_S^2(t)dt}
 \end{empheq}
 
 \begin{empheq}[box={\mybluebox[5pt]}]{equation*}
-I_{RMS}=\sqrt{\frac{1}{T}\int_{t_o}^{t_o+T}i^2(t)dt}
+V_{RMS}=\sqrt{V_{1,RMS}^2 + V_{2,RMS}^2 + V_{3,RMS}^2 + ... }
+\end{empheq}
+
+\begin{empheq}[box={\mybluebox[5pt]}]{equation*}
+I_{RMS}=\sqrt{\frac{1}{T}\int_{t_o}^{t_o+T}i_S^2(t)dt}
+\end{empheq}
+
+\begin{empheq}[box={\mybluebox[5pt]}]{equation*}
+I_{RMS}=\sqrt{I_{1,RMS}^2 + I_{2,RMS}^2 + I_{3,RMS}^2 + ... }
 \end{empheq}
 
 \begin{itemize}	%*********************************************************************
 \item \acrshort{rmsVoltage} := \acrlong{rmsVoltage} \index{\acrlong{rmsVoltage}}				% Vrms
 \item \acrshort{rmsCurrent} := \acrlong{rmsCurrent} \index{\acrlong{rmsCurrent}}				% Irms
+\item \acrshort{sVoltage} := \acrlong{sVoltage} \index{\acrlong{sVoltage}}						% vS(t)
+\item \acrshort{sCurrent} := \acrlong{sCurrent} \index{\acrlong{sCurrent}}						% iS(t)
 \item \acrshort{initTime} := \acrlong{initTime}												% to
 \item \acrshort{timePeriod} := \acrlong{timePeriod}											% T
 \end{itemize}	%*********************************************************************
+\end{minipage}
+\clearpage
+
+% Apparent Power
+\begin{minipage}{\linewidth}
+\subsection{Apparent Power}
+Apparent power relates the true and reactive powers of a circuit. The true power is what is usually calculated with the fundamental formula ($P=IV$), and is measured in watts. The reactive power is represented by the variable Q, and describes how inductors and capacitors change the voltage and current of a circuit without actually drawing power. Reactive power is usually returned back to the source and is measured in units Volt-Amp-Reactive (VAR). Apparent power relates these two phenomenons in a trigonometric fashion with true power (P) and reactive power (Q) on the x and y axis, and apparent power (S) on the hypoteneuse. The angle used to relate each magnitude to eachother is the impedence phase angle, with apparent power equaling the tangent of the reactive power divided by true power ($S = tan(\frac{Q}{P})$).
+
+\begin{empheq}[box={\mybluebox[5pt]}]{equation*}
+S = V_{RMS}I_{RMS}
+\end{empheq}
+
+\begin{itemize}	%*********************************************************************
+\item \acrshort{rmsVoltage} := \acrlong{rmsVoltage} \index{\acrlong{rmsVoltage}}				% Vrms
+\item \acrshort{rmsCurrent} := \acrlong{rmsCurrent} \index{\acrlong{rmsCurrent}}				% Irms
+\end{itemize}	%*********************************************************************
+
+% Power Factor
+\subsection{Power Factor}
+
+\begin{empheq}[box={\mybluebox[5pt]}]{equation*}
+pf = \frac{P}{S} = \frac{P}{V_{RMS}I_{RMS}}
+\end{empheq}
+
+\begin{itemize}	%*********************************************************************
+\item \acrshort{pf} := \acrlong{pf} \index{\acrlong{pf}}										% pf
+\item \acrshort{avgPower} := True Power (W)\index{True Power (W)}							% P
+\item \acrshort{rmsVoltage} := \acrlong{rmsVoltage} \index{\acrlong{rmsVoltage}}				% Vrms
+\item \acrshort{rmsCurrent} := \acrlong{rmsCurrent} \index{\acrlong{rmsCurrent}}				% Irms
+\end{itemize}	%*********************************************************************
+
+\end{minipage}
+\clearpage
+%---------------------------------------------------------------------------------------------------------------------------------
+% --- --- --- --- --- --- --- --- Sinusoidal AC Circuits --- --- --- --- --- --- --- --- 
+\begin{minipage}{\linewidth}
+\section{Sinusoidal AC Circuits}
+
+% Definitions
+\subsection{Definitions}
+
+\subsubsection{Voltage and Current Definitions for any and all Elements}
+
+\begin{empheq}[box={\mybluebox[5pt]}]{equation*}
+\begin{split}
+v(t) = V_mcos(\omega t + \Theta)  \\
+i(t) = I_mcos(\omega t + \phi)
+\end{split}
+\end{empheq}
+
+\subsubsection{Real Power}
+
+\begin{empheq}[box={\mybluebox[5pt]}]{equation*}
+p(t) = (\frac{V_mI_m}{2})[cos(2\omega t + \Theta + \phi) + cos(\Theta - \phi)]
+\end{empheq}
+
+\begin{empheq}[box={\mybluebox[5pt]}]{equation*}
+P = (\frac{V_mI_m}{2})cos(\Theta - \phi)
+\end{empheq}
+
+\subsubsection{Reactive Power}
+
+\begin{empheq}[box={\mybluebox[5pt]}]{equation*}
+Q = V_{RMS}I_{RMS}sin(\Theta-\phi)
+\end{empheq}
+
+\subsubsection{Apparent Power}
+
+\begin{empheq}[box={\mybluebox[5pt]}]{equation*}
+S = P + jQ = (V_{RMS})(I_{RMS})^*
+\end{empheq}
+
 \end{minipage}
 \clearpage
 %---------------------------------------------------------------------------------------------------------------------------------
