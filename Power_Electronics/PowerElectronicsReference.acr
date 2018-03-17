@@ -1,0 +1,65 @@
+\glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
+\begin{theglossary}\glossaryheader
+\glsgroupheading{glssymbols}\relax \glsresetentrylist %
+\glossentry{capacitance}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{ii}}}%
+\glossentry{avgCurrent}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{ii}}}%
+\glossentry{capacitorAvgCurrent}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{ii}}}%
+\glossentry{inductorAvgCurrent}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{ii}}}%
+\glossentry{rmsCurrent}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{ii\delimN iii}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{2}}}%
+\glossentry{inductance}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{ii\delimN iii}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{2}}}%
+\glossentry{avgPower}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{ii\delimN iii}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{1}}}%
+\glossentry{timePeriod}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{ii}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{1\delimN 2}}}%
+\glossentry{avgVoltage}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{ii}}}%
+\glossentry{capacitorAvgVoltage}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{ii}}}%
+\glossentry{inductorAvgVoltage}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{ii}}}%
+\glossentry{rmsVoltage}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{ii\delimN iii}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{2}}}%
+\glossentry{work}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{ii\delimN iii}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{1}}}%
+\glossentry{instCurrent}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{ii\delimN iii}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{1}}}%
+\glossentry{initCurrent}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{ii\delimN iii}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{2}}}%
+\glossentry{capacitorCurrent}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{ii}}}%
+\glossentry{inductorCurrent}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{ii\delimN iii}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{2}}}%
+\glossentry{instPower}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{ii\delimN iii}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{1}}}%
+\glossentry{instTime}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{ii}}}%
+\glossentry{initTime}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{ii}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{1\delimN 2}}}%
+\glossentry{instVoltage}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{ii\delimN iii}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{1}}}%
+\glossentry{initVoltage}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{ii}}}%
+\glossentry{capacitorVoltage}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{ii}}}%
+\glossentry{inductorVoltage}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{ii\delimN iii}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{2}}}%
+\end{theglossary}\glossarypostamble

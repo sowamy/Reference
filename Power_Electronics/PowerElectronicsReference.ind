@@ -1,5 +1,15 @@
 \begin{theindex}
 
-  \item Instantaneous Power, 1
+  \item \acrlong{avgPower}, \hyperpage{1}
+  \item \acrlong{inductance}, \hyperpage{2}
+  \item \acrlong{inductorCurrent}, \hyperpage{2}
+  \item \acrlong{inductorVoltage}, \hyperpage{2}
+  \item \acrlong{initCurrent}, \hyperpage{2}
+  \item \acrlong{instCurrent}, \hyperpage{1}
+  \item \acrlong{instPower}, \hyperpage{1}
+  \item \acrlong{instVoltage}, \hyperpage{1}
+  \item \acrlong{rmsCurrent}, \hyperpage{2}
+  \item \acrlong{rmsVoltage}, \hyperpage{2}
+  \item \acrlong{work}, \hyperpage{1}
 
 \end{theindex}

@@ -1,5 +1,5 @@
 \documentclass{article}
-%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------------------------------
 % Packages
 \usepackage[margin=1in,includefoot]{geometry}
 \usepackage{enumitem}
@@ -10,19 +10,29 @@
 \usepackage{imakeidx}
 \usepackage[utf8]{inputenc}
 \usepackage{color}
-\usepackage[acronym,style=tree]{glossaries}
+\usepackage[acronym,toc,style=tree]{glossaries}
 \usepackage[automake]{glossaries-extra}
 \usepackage{graphicx}
-%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\usepackage{hyperref}
+%---------------------------------------------------------------------------------------------------------------------------------
 \graphicspath{{./Images/}}
-%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------------------------------
+% TOC Hyperlink Setup
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=blue,
+    urlcolor=black
+}
+%---------------------------------------------------------------------------------------------------------------------------------
 % Sets automatic numbering system in \paragraph
 \setcounter{secnumdepth}{4}
 \titleformat{\paragraph}
 {\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
 \titlespacing*{\paragraph}
 {0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
-%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------------------------------
 % Custom Box for Mathematical Formulae
 \definecolor{myblue}{rgb}{.8, .8, 1}
 \newlength\mytemplen
@@ -46,54 +56,154 @@
     \dp\mytempbox\mytemplen
     \colorbox{myblue}{\hspace{1em}\usebox{\mytempbox}\hspace{1em}}}
 \makeatother
-%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------------------------------
 % Allows for the creation of the glossary
 \makeglossaries
-%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------------------------------
 % Glossary Terms
 
 % -- Instantaneous Voltage
-\newglossaryentry{Instantaneous Voltage}
+\newglossaryentry{InstantaneousTime}
+{
+	name=Instantaneous Time,
+	description={An instant in time}
+}
+
+\newglossaryentry{TimePeriod}
+{
+	name=Time Period,
+	description={A period between two points in time. Usually describes a full period in a sinusoidal wave}
+}
+
+\newglossaryentry{InitialTime}
+{
+	name=Initial Time,
+	description={Describes the initial time that a period in time is taken}
+}
+
+\newglossaryentry{InstantaneousVoltage}
 {
 	name=Instantaneous Voltage,
-	description={The voltage across two reference points at instantaneous time t.}
+	description={The voltage across two reference points at time t}
 }
-%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+\newglossaryentry{AverageVoltage}
+{
+	name=Average Voltage,
+	description={The average voltage across two reference points throughout a period of time T}
+}
+
+\newglossaryentry{InstantaneousCurrent}
+{
+	name=Instantaneous Current,
+	description={The current going through a reference point at time t}
+}
+
+\newglossaryentry{AverageCurrent}
+{
+	name=Average Current,
+	description={The average current going through a reference point throughout a period of time T}
+}
+
+\newglossaryentry{InstantaneousPower}
+{
+	name=Instantaneous Power,
+	description={The power an element is consuming or producing at time t}
+}
+
+\newglossaryentry{AveragePower}
+{
+	name=Average Power,
+	description={The average power an element is consuming or producing throughout a period of time T}
+}
+
+\newglossaryentry{Work}
+{
+	name=Work,
+	description={The power a system is able to output over a period in time}
+}
+
+\newglossaryentry{Inductance}
+{
+	name=Inductance,
+	description={A measurement of the phenomenon that change in current is resisted in an inductor due to the establishment of a magnetic field}
+}
+
+\newglossaryentry{Capacitance}
+{
+	name=Capacitance,
+	description={A measurement of the phenomenon that change in voltage is resisted in a capacitor dut to the establishment of an electric field}
+}
+%---------------------------------------------------------------------------------------------------------------------------------
 % Variables
-\newacronym{v(t)}{v(t)}{Instantaneous Voltage}
-\newacronym{i(t)}{i(t)}{Instantaneous Current}
-\newacronym{p(t)}{p(t)}{Instantaneous Power}
-\newacronym{P}{P}{Average Power}
-%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+% --- Time
+\newacronym{instTime}{$t$}{Instantaneous Time (s)}
+\newacronym{timePeriod}{$T$}{Time Period ($\Delta$s)}
+\newacronym{initTime}{$t_o$}{Initial Time (s)}
+
+% --- Voltage
+\newacronym{instVoltage}{$v(t)$}{Instantaneous Voltage (V)}
+\newacronym{initVoltage}{$v(t_o)$}{Initial Voltage at Time $t_o$ (V)}
+\newacronym{avgVoltage}{$V$}{Average Voltage (V)}
+\newacronym{rmsVoltage}{$V_{RMS}$}{RMS Voltage (V)}
+
+% --- Current
+\newacronym{instCurrent}{$i(t)$}{Instantaneous Current (A)}
+\newacronym{initCurrent}{$i(t_o)$}{Initial Current at Time $t_o$ (A)}
+\newacronym{avgCurrent}{$I$}{Average Current (A)}
+\newacronym{rmsCurrent}{$I_{RMS}$}{RMS Current (A)}
+
+% --- Power
+\newacronym{instPower}{$p(t)$}{Instantaneous Power (W)}
+\newacronym{avgPower}{$P$}{Average Power (W)}
+
+% --- Work
+\newacronym{work}{$W$}{Work (J)}
+
+% --- Inductance
+\newacronym{inductance}{$L$}{Inductance (H)}
+\newacronym{inductorVoltage}{$v_L(t)$}{Instantaneous Voltage Across an Inductor (V)}
+\newacronym{inductorAvgVoltage}{$V_L$}{Average Voltage Across and Inductor (V)}
+\newacronym{inductorCurrent}{$i_L(t)$}{Instantaneous Current Through an Inductor (A)}
+\newacronym{inductorAvgCurrent}{$I_L$}{Average Current Through an Inductor (A)}
+
+% --- Capacitance
+\newacronym{capacitance}{$C$}{Capacitance (F)}
+\newacronym{capacitorVoltage}{$v_C(t)$}{Instantaneous Voltage Across a Capacitor (V)}
+\newacronym{capacitorAvgVoltage}{$V_C$}{Average Voltage Across a Capacitor (V)}
+\newacronym{capacitorCurrent}{$i_C(t)$}{Instantaneous Current Through a Capacitor (A)}
+\newacronym{capacitorAvgCurrent}{$I_C$}{Average Current Through a Capacitor(A)}
+%---------------------------------------------------------------------------------------------------------------------------------
 % Index Stuff
 \makeindex[columns=1]
-%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------------------------------
 \begin{document}
 \pagenumbering{gobble}
-%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------------------------------
 % Title Page
 \title{Power Electronics Reference}
 \author{Angelino Lefevers}
 \maketitle
 \thispagestyle{empty}
 \cleardoublepage
-%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------------------------------
 % Table of Contents
 \tableofcontents
 \thispagestyle{empty}
 \cleardoublepage
-%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------------------------------
 % Introduction
 \section*{Introduction}
 \addcontentsline{toc}{section}{Introduction}
 Just throwing together some concepts and examples for later reference
 \cleardoublepage
-%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------------------------------
 % --- --- --- --- --- --- --- ---  General Equations --- --- --- --- --- --- --- --- 
 \section{General Equations}
 \pagenumbering{arabic}
 \setcounter{page}{1}
-%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------------------------------
 % Power and Energy
 \subsection{Power and Energy}
 
@@ -105,11 +215,11 @@ This value is a positive real number if the element is supplying power, or is a 
 p(t)=v(t)i(t)\quad(W)
 \end{empheq}
 
-\begin{itemize}
-\item p(t) := Power at time t. (W) \index{Instantaneous Power}
-\item v(t) := Voltage at time t. (V)
-\item i(t) := Current at time t. (A)
-\end{itemize}
+\begin{itemize}	%*********************************************************************
+\item \acrshort{instPower} := \acrlong{instPower} \index{\acrlong{instPower}}					% p(t)
+\item \acrshort{instVoltage} := \acrlong{instVoltage} \index{\acrlong{instVoltage}}				% v(t)
+\item \acrshort{instCurrent} := \acrlong{instCurrent} \index{\acrlong{instCurrent}}				% i(t)
+\end{itemize}	%*********************************************************************
 
 % Average Power
 \subsubsection{Average Power}
@@ -126,15 +236,15 @@ P=\frac{1}{T}\int_{t_o}^{t_o+T}v(t)i(t)dt\quad(W)
 P=\frac{W}{T}\quad(W)
 \end{empheq}
 
-\begin{itemize}
-\item P := Average power (W)
-\item p(t) := Instantaneous Power (W)
-\item v(t) := Instantaneous Voltage (V)
-\item i(t) := Instantaneous Current (A)
-\item T := Final time of average (Period in periodic sinusoidal signal) (s)
-\item $t_o$ := Initial time of average (s)
-\item W := Work (J)
-\end{itemize}
+\begin{itemize}	%*********************************************************************
+\item \acrshort{avgPower} := \acrlong{avgPower} \index{\acrlong{avgPower}}					% P
+\item \acrshort{instPower} := \acrlong{instPower} \index{\acrlong{instPower}}					% p(t)
+\item \acrshort{instVoltage} := \acrlong{instVoltage} \index{\acrlong{instVoltage}}				% v(t)
+\item \acrshort{instCurrent} := \acrlong{instCurrent} \index{\acrlong{instCurrent}}				% i(t)
+\item \acrshort{timePeriod} := \acrlong{timePeriod}											% T
+\item \acrshort{initTime} := \acrlong{initTime}												% t(to)
+\item \acrshort{work} := \acrlong{work} \index{\acrlong{work}}								% W
+\end{itemize}	%*********************************************************************
 
 % Energy
 \subsubsection{Energy}
@@ -143,13 +253,36 @@ P=\frac{W}{T}\quad(W)
 W=\int_{t_1}^{t_2}p(t)dt\quad(J)
 \end{empheq}
 
-\begin{itemize}
-\item W := Work (J)
-\item p(t) := Instantaneous Power. (W)
-\end{itemize}
+\begin{itemize}	%*********************************************************************
+\item \acrshort{work} := \acrlong{work} \index{\acrlong{work}}								% W
+\item \acrshort{instPower} := \acrlong{instPower} \index{\acrlong{instPower}}					% p(t)
+\end{itemize}	%*********************************************************************
+
+% Inductors
+\subsection{Inductors}
+
+% - Current
+\subsubsection{Current/Voltage Relationship}
+
+\begin{empheq}[box={\mybluebox[5pt]}]{equation*}
+i(t_o+T) = \frac{1}{L}\int_{t_o}^{t_o+T}v_L(t)dt+i(t_o)
+\end{empheq}
+
+\begin{itemize}	%*********************************************************************
+\item \acrshort{initCurrent} := \acrlong{initCurrent} \index{\acrlong{initCurrent}}				% i(to)
+\item \acrshort{inductorCurrent} := \acrlong{inductorCurrent} \index{\acrlong{inductorCurrent}}	% iL(t)
+\item \acrshort{inductorVoltage} := \acrlong{inductorVoltage} \index{\acrlong{inductorVoltage}}	% vL(t)
+\item \acrshort{inductance} := \acrlong{inductance} \index{\acrlong{inductance}}				% L
+\item \acrshort{initTime} := \acrlong{initTime}												% i(to)
+\item \acrshort{timePeriod} := \acrlong{timePeriod}											% T
+\end{itemize}	%*********************************************************************
+
+\begin{empheq}[box={\mybluebox[5pt]}]{equation*}
+i(t_o+T) = \frac{1}{L}\int_{t_o}^{t_o+T}v_L(t)dt+i(t_o)
+\end{empheq}
 
 % RMS Values
-\subsubsection{RMS Values}
+\subsection{RMS Values}
 
 \begin{empheq}[box={\mybluebox[5pt]}]{equation*}
 V_{RMS}=\sqrt{\frac{1}{T}\int_{t_o}^{t_o+T}v^2(t)dt}
@@ -159,22 +292,29 @@ V_{RMS}=\sqrt{\frac{1}{T}\int_{t_o}^{t_o+T}v^2(t)dt}
 I_{RMS}=\sqrt{\frac{1}{T}\int_{t_o}^{t_o+T}i^2(t)dt}
 \end{empheq}
 
+\begin{itemize}	%*********************************************************************
+\item \acrshort{rmsVoltage} := \acrlong{rmsVoltage} \index{\acrlong{rmsVoltage}}				% Vrms
+\item \acrshort{rmsCurrent} := \acrlong{rmsCurrent} \index{\acrlong{rmsCurrent}}				% Irms
+\item \acrshort{initTime} := \acrlong{initTime}												% i(to)
+\item \acrshort{timePeriod} := \acrlong{timePeriod}											% T
+\end{itemize}	%*********************************************************************
+
 \clearpage
-%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------------------------------
 % Appendices, Indexes, and Glossaries
 \pagenumbering{roman}
 \setcounter{page}{1}
 
-\addcontentsline{toc}{section}{Variables}
+%\addcontentsline{toc}{section}{Variables}
 \printglossary[type=\acronymtype,nonumberlist,title={Variables}]
 \clearpage
-\addcontentsline{toc}{section}{Glossary}
+%\addcontentsline{toc}{section}{Glossary}
 \glsaddall
 \printglossary[nonumberlist]
 \clearpage
-%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------------------------------
 \printindex
 \clearpage
-%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------------------------------
 \end{document}
-%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------------------------------
