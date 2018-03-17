@@ -1,15 +1,19 @@
 \begin{theindex}
 
   \item \acrlong{avgPower}, \hyperpage{1}
-  \item \acrlong{inductance}, \hyperpage{2}
-  \item \acrlong{inductorCurrent}, \hyperpage{2}
-  \item \acrlong{inductorVoltage}, \hyperpage{2}
+  \item \acrlong{indAvgPower}, \hyperpage{3}
+  \item \acrlong{indAvgVoltage}, \hyperpage{2}
+  \item \acrlong{indCurrent}, \hyperpage{2, 3}
+  \item \acrlong{indInstPower}, \hyperpage{3}
+  \item \acrlong{indInstWork}, \hyperpage{3}
+  \item \acrlong{indVoltage}, \hyperpage{2}
+  \item \acrlong{inductance}, \hyperpage{2, 3}
   \item \acrlong{initCurrent}, \hyperpage{2}
   \item \acrlong{instCurrent}, \hyperpage{1}
   \item \acrlong{instPower}, \hyperpage{1}
   \item \acrlong{instVoltage}, \hyperpage{1}
-  \item \acrlong{rmsCurrent}, \hyperpage{2}
-  \item \acrlong{rmsVoltage}, \hyperpage{2}
+  \item \acrlong{rmsCurrent}, \hyperpage{4}
+  \item \acrlong{rmsVoltage}, \hyperpage{4}
   \item \acrlong{work}, \hyperpage{1}
 
 \end{theindex}

@@ -1,75 +1,113 @@
-\glossaryentry{$p(t)$?\glossentry{instPower}|setentrycounter[]{page}\glsnumberformat}{1}
-\glossaryentry{$p(t)$?\glossentry{instPower}|setentrycounter[]{page}\glsnumberformat}{1}
-\glossaryentry{$v(t)$?\glossentry{instVoltage}|setentrycounter[]{page}\glsnumberformat}{1}
-\glossaryentry{$v(t)$?\glossentry{instVoltage}|setentrycounter[]{page}\glsnumberformat}{1}
-\glossaryentry{$i(t)$?\glossentry{instCurrent}|setentrycounter[]{page}\glsnumberformat}{1}
-\glossaryentry{$i(t)$?\glossentry{instCurrent}|setentrycounter[]{page}\glsnumberformat}{1}
-\glossaryentry{$P$?\glossentry{avgPower}|setentrycounter[]{page}\glsnumberformat}{1}
-\glossaryentry{$P$?\glossentry{avgPower}|setentrycounter[]{page}\glsnumberformat}{1}
-\glossaryentry{$p(t)$?\glossentry{instPower}|setentrycounter[]{page}\glsnumberformat}{1}
-\glossaryentry{$p(t)$?\glossentry{instPower}|setentrycounter[]{page}\glsnumberformat}{1}
-\glossaryentry{$v(t)$?\glossentry{instVoltage}|setentrycounter[]{page}\glsnumberformat}{1}
-\glossaryentry{$v(t)$?\glossentry{instVoltage}|setentrycounter[]{page}\glsnumberformat}{1}
-\glossaryentry{$i(t)$?\glossentry{instCurrent}|setentrycounter[]{page}\glsnumberformat}{1}
-\glossaryentry{$i(t)$?\glossentry{instCurrent}|setentrycounter[]{page}\glsnumberformat}{1}
-\glossaryentry{$T$?\glossentry{timePeriod}|setentrycounter[]{page}\glsnumberformat}{1}
-\glossaryentry{$T$?\glossentry{timePeriod}|setentrycounter[]{page}\glsnumberformat}{1}
-\glossaryentry{$t_o$?\glossentry{initTime}|setentrycounter[]{page}\glsnumberformat}{1}
-\glossaryentry{$t_o$?\glossentry{initTime}|setentrycounter[]{page}\glsnumberformat}{1}
-\glossaryentry{$W$?\glossentry{work}|setentrycounter[]{page}\glsnumberformat}{1}
-\glossaryentry{$W$?\glossentry{work}|setentrycounter[]{page}\glsnumberformat}{1}
-\glossaryentry{$W$?\glossentry{work}|setentrycounter[]{page}\glsnumberformat}{1}
-\glossaryentry{$W$?\glossentry{work}|setentrycounter[]{page}\glsnumberformat}{1}
-\glossaryentry{$p(t)$?\glossentry{instPower}|setentrycounter[]{page}\glsnumberformat}{1}
-\glossaryentry{$p(t)$?\glossentry{instPower}|setentrycounter[]{page}\glsnumberformat}{1}
-\glossaryentry{$i(t_o)$?\glossentry{initCurrent}|setentrycounter[]{page}\glsnumberformat}{2}
-\glossaryentry{$i(t_o)$?\glossentry{initCurrent}|setentrycounter[]{page}\glsnumberformat}{2}
-\glossaryentry{$i_L(t)$?\glossentry{inductorCurrent}|setentrycounter[]{page}\glsnumberformat}{2}
-\glossaryentry{$i_L(t)$?\glossentry{inductorCurrent}|setentrycounter[]{page}\glsnumberformat}{2}
-\glossaryentry{$v_L(t)$?\glossentry{inductorVoltage}|setentrycounter[]{page}\glsnumberformat}{2}
-\glossaryentry{$v_L(t)$?\glossentry{inductorVoltage}|setentrycounter[]{page}\glsnumberformat}{2}
-\glossaryentry{$L$?\glossentry{inductance}|setentrycounter[]{page}\glsnumberformat}{2}
-\glossaryentry{$L$?\glossentry{inductance}|setentrycounter[]{page}\glsnumberformat}{2}
-\glossaryentry{$t_o$?\glossentry{initTime}|setentrycounter[]{page}\glsnumberformat}{2}
-\glossaryentry{$t_o$?\glossentry{initTime}|setentrycounter[]{page}\glsnumberformat}{2}
-\glossaryentry{$T$?\glossentry{timePeriod}|setentrycounter[]{page}\glsnumberformat}{2}
-\glossaryentry{$T$?\glossentry{timePeriod}|setentrycounter[]{page}\glsnumberformat}{2}
-\glossaryentry{$V_{RMS}$?\glossentry{rmsVoltage}|setentrycounter[]{page}\glsnumberformat}{2}
-\glossaryentry{$V_{RMS}$?\glossentry{rmsVoltage}|setentrycounter[]{page}\glsnumberformat}{2}
-\glossaryentry{$I_{RMS}$?\glossentry{rmsCurrent}|setentrycounter[]{page}\glsnumberformat}{2}
-\glossaryentry{$I_{RMS}$?\glossentry{rmsCurrent}|setentrycounter[]{page}\glsnumberformat}{2}
-\glossaryentry{$t$?\glossentry{instTime}|setentrycounter[]{page}\glsnumberformat}{ii}
-\glossaryentry{$T$?\glossentry{timePeriod}|setentrycounter[]{page}\glsnumberformat}{ii}
-\glossaryentry{$t_o$?\glossentry{initTime}|setentrycounter[]{page}\glsnumberformat}{ii}
-\glossaryentry{$v(t)$?\glossentry{instVoltage}|setentrycounter[]{page}\glsnumberformat}{ii}
-\glossaryentry{$v(t_o)$?\glossentry{initVoltage}|setentrycounter[]{page}\glsnumberformat}{ii}
-\glossaryentry{$V$?\glossentry{avgVoltage}|setentrycounter[]{page}\glsnumberformat}{ii}
-\glossaryentry{$V_{RMS}$?\glossentry{rmsVoltage}|setentrycounter[]{page}\glsnumberformat}{ii}
-\glossaryentry{$i(t)$?\glossentry{instCurrent}|setentrycounter[]{page}\glsnumberformat}{ii}
-\glossaryentry{$i(t_o)$?\glossentry{initCurrent}|setentrycounter[]{page}\glsnumberformat}{ii}
-\glossaryentry{$I$?\glossentry{avgCurrent}|setentrycounter[]{page}\glsnumberformat}{ii}
-\glossaryentry{$I_{RMS}$?\glossentry{rmsCurrent}|setentrycounter[]{page}\glsnumberformat}{ii}
-\glossaryentry{$p(t)$?\glossentry{instPower}|setentrycounter[]{page}\glsnumberformat}{ii}
-\glossaryentry{$P$?\glossentry{avgPower}|setentrycounter[]{page}\glsnumberformat}{ii}
-\glossaryentry{$W$?\glossentry{work}|setentrycounter[]{page}\glsnumberformat}{ii}
-\glossaryentry{$L$?\glossentry{inductance}|setentrycounter[]{page}\glsnumberformat}{ii}
-\glossaryentry{$v_L(t)$?\glossentry{inductorVoltage}|setentrycounter[]{page}\glsnumberformat}{ii}
-\glossaryentry{$V_L$?\glossentry{inductorAvgVoltage}|setentrycounter[]{page}\glsnumberformat}{ii}
-\glossaryentry{$i_L(t)$?\glossentry{inductorCurrent}|setentrycounter[]{page}\glsnumberformat}{ii}
-\glossaryentry{$I_L$?\glossentry{inductorAvgCurrent}|setentrycounter[]{page}\glsnumberformat}{ii}
-\glossaryentry{$C$?\glossentry{capacitance}|setentrycounter[]{page}\glsnumberformat}{ii}
-\glossaryentry{$v_C(t)$?\glossentry{capacitorVoltage}|setentrycounter[]{page}\glsnumberformat}{ii}
-\glossaryentry{$V_C$?\glossentry{capacitorAvgVoltage}|setentrycounter[]{page}\glsnumberformat}{ii}
-\glossaryentry{$i_C(t)$?\glossentry{capacitorCurrent}|setentrycounter[]{page}\glsnumberformat}{ii}
-\glossaryentry{$I_C$?\glossentry{capacitorAvgCurrent}|setentrycounter[]{page}\glsnumberformat}{ii}
-\glossaryentry{$P$?\glossentry{avgPower}|setentrycounter[]{page}\glsnumberformat}{iii}
-\glossaryentry{$L$?\glossentry{inductance}|setentrycounter[]{page}\glsnumberformat}{iii}
-\glossaryentry{$i_L(t)$?\glossentry{inductorCurrent}|setentrycounter[]{page}\glsnumberformat}{iii}
-\glossaryentry{$v_L(t)$?\glossentry{inductorVoltage}|setentrycounter[]{page}\glsnumberformat}{iii}
-\glossaryentry{$i(t_o)$?\glossentry{initCurrent}|setentrycounter[]{page}\glsnumberformat}{iii}
-\glossaryentry{$i(t)$?\glossentry{instCurrent}|setentrycounter[]{page}\glsnumberformat}{iii}
-\glossaryentry{$p(t)$?\glossentry{instPower}|setentrycounter[]{page}\glsnumberformat}{iii}
-\glossaryentry{$v(t)$?\glossentry{instVoltage}|setentrycounter[]{page}\glsnumberformat}{iii}
-\glossaryentry{$I_{RMS}$?\glossentry{rmsCurrent}|setentrycounter[]{page}\glsnumberformat}{iii}
-\glossaryentry{$V_{RMS}$?\glossentry{rmsVoltage}|setentrycounter[]{page}\glsnumberformat}{iii}
-\glossaryentry{$W$?\glossentry{work}|setentrycounter[]{page}\glsnumberformat}{iii}
+\glossaryentry{$\pmb {p(t)}$?\glossentry{instPower}|setentrycounter[]{page}\glsnumberformat}{1}
+\glossaryentry{$\pmb {p(t)}$?\glossentry{instPower}|setentrycounter[]{page}\glsnumberformat}{1}
+\glossaryentry{$\pmb {v(t)}$?\glossentry{instVoltage}|setentrycounter[]{page}\glsnumberformat}{1}
+\glossaryentry{$\pmb {v(t)}$?\glossentry{instVoltage}|setentrycounter[]{page}\glsnumberformat}{1}
+\glossaryentry{$\pmb {i(t)}$?\glossentry{instCurrent}|setentrycounter[]{page}\glsnumberformat}{1}
+\glossaryentry{$\pmb {i(t)}$?\glossentry{instCurrent}|setentrycounter[]{page}\glsnumberformat}{1}
+\glossaryentry{$\pmb {P}$?\glossentry{avgPower}|setentrycounter[]{page}\glsnumberformat}{1}
+\glossaryentry{$\pmb {P}$?\glossentry{avgPower}|setentrycounter[]{page}\glsnumberformat}{1}
+\glossaryentry{$\pmb {p(t)}$?\glossentry{instPower}|setentrycounter[]{page}\glsnumberformat}{1}
+\glossaryentry{$\pmb {p(t)}$?\glossentry{instPower}|setentrycounter[]{page}\glsnumberformat}{1}
+\glossaryentry{$\pmb {v(t)}$?\glossentry{instVoltage}|setentrycounter[]{page}\glsnumberformat}{1}
+\glossaryentry{$\pmb {v(t)}$?\glossentry{instVoltage}|setentrycounter[]{page}\glsnumberformat}{1}
+\glossaryentry{$\pmb {i(t)}$?\glossentry{instCurrent}|setentrycounter[]{page}\glsnumberformat}{1}
+\glossaryentry{$\pmb {i(t)}$?\glossentry{instCurrent}|setentrycounter[]{page}\glsnumberformat}{1}
+\glossaryentry{$\pmb {T}$?\glossentry{timePeriod}|setentrycounter[]{page}\glsnumberformat}{1}
+\glossaryentry{$\pmb {T}$?\glossentry{timePeriod}|setentrycounter[]{page}\glsnumberformat}{1}
+\glossaryentry{$\pmb {t_o}$?\glossentry{initTime}|setentrycounter[]{page}\glsnumberformat}{1}
+\glossaryentry{$\pmb {t_o}$?\glossentry{initTime}|setentrycounter[]{page}\glsnumberformat}{1}
+\glossaryentry{$\pmb {W}$?\glossentry{work}|setentrycounter[]{page}\glsnumberformat}{1}
+\glossaryentry{$\pmb {W}$?\glossentry{work}|setentrycounter[]{page}\glsnumberformat}{1}
+\glossaryentry{$\pmb {W}$?\glossentry{work}|setentrycounter[]{page}\glsnumberformat}{1}
+\glossaryentry{$\pmb {W}$?\glossentry{work}|setentrycounter[]{page}\glsnumberformat}{1}
+\glossaryentry{$\pmb {p(t)}$?\glossentry{instPower}|setentrycounter[]{page}\glsnumberformat}{1}
+\glossaryentry{$\pmb {p(t)}$?\glossentry{instPower}|setentrycounter[]{page}\glsnumberformat}{1}
+\glossaryentry{$\pmb {i_L(t)}$?\glossentry{indCurrent}|setentrycounter[]{page}\glsnumberformat}{2}
+\glossaryentry{$\pmb {i_L(t)}$?\glossentry{indCurrent}|setentrycounter[]{page}\glsnumberformat}{2}
+\glossaryentry{$\pmb {v_L(t)}$?\glossentry{indVoltage}|setentrycounter[]{page}\glsnumberformat}{2}
+\glossaryentry{$\pmb {v_L(t)}$?\glossentry{indVoltage}|setentrycounter[]{page}\glsnumberformat}{2}
+\glossaryentry{$\pmb {i(t_o)}$?\glossentry{initCurrent}|setentrycounter[]{page}\glsnumberformat}{2}
+\glossaryentry{$\pmb {i(t_o)}$?\glossentry{initCurrent}|setentrycounter[]{page}\glsnumberformat}{2}
+\glossaryentry{$\pmb {L}$?\glossentry{inductance}|setentrycounter[]{page}\glsnumberformat}{2}
+\glossaryentry{$\pmb {L}$?\glossentry{inductance}|setentrycounter[]{page}\glsnumberformat}{2}
+\glossaryentry{$\pmb {t_o}$?\glossentry{initTime}|setentrycounter[]{page}\glsnumberformat}{2}
+\glossaryentry{$\pmb {t_o}$?\glossentry{initTime}|setentrycounter[]{page}\glsnumberformat}{2}
+\glossaryentry{$\pmb {T}$?\glossentry{timePeriod}|setentrycounter[]{page}\glsnumberformat}{2}
+\glossaryentry{$\pmb {T}$?\glossentry{timePeriod}|setentrycounter[]{page}\glsnumberformat}{2}
+\glossaryentry{$\pmb {V_L}$?\glossentry{indAvgVoltage}|setentrycounter[]{page}\glsnumberformat}{2}
+\glossaryentry{$\pmb {V_L}$?\glossentry{indAvgVoltage}|setentrycounter[]{page}\glsnumberformat}{2}
+\glossaryentry{$\pmb {v_L(t)}$?\glossentry{indVoltage}|setentrycounter[]{page}\glsnumberformat}{2}
+\glossaryentry{$\pmb {v_L(t)}$?\glossentry{indVoltage}|setentrycounter[]{page}\glsnumberformat}{2}
+\glossaryentry{$\pmb {t_o}$?\glossentry{initTime}|setentrycounter[]{page}\glsnumberformat}{2}
+\glossaryentry{$\pmb {t_o}$?\glossentry{initTime}|setentrycounter[]{page}\glsnumberformat}{2}
+\glossaryentry{$\pmb {T}$?\glossentry{timePeriod}|setentrycounter[]{page}\glsnumberformat}{2}
+\glossaryentry{$\pmb {T}$?\glossentry{timePeriod}|setentrycounter[]{page}\glsnumberformat}{2}
+\glossaryentry{$\pmb {w_L(t)}$?\glossentry{indInstWork}|setentrycounter[]{page}\glsnumberformat}{3}
+\glossaryentry{$\pmb {w_L(t)}$?\glossentry{indInstWork}|setentrycounter[]{page}\glsnumberformat}{3}
+\glossaryentry{$\pmb {i_L(t)}$?\glossentry{indCurrent}|setentrycounter[]{page}\glsnumberformat}{3}
+\glossaryentry{$\pmb {i_L(t)}$?\glossentry{indCurrent}|setentrycounter[]{page}\glsnumberformat}{3}
+\glossaryentry{$\pmb {L}$?\glossentry{inductance}|setentrycounter[]{page}\glsnumberformat}{3}
+\glossaryentry{$\pmb {L}$?\glossentry{inductance}|setentrycounter[]{page}\glsnumberformat}{3}
+\glossaryentry{$\pmb {P_L}$?\glossentry{indAvgPower}|setentrycounter[]{page}\glsnumberformat}{3}
+\glossaryentry{$\pmb {P_L}$?\glossentry{indAvgPower}|setentrycounter[]{page}\glsnumberformat}{3}
+\glossaryentry{$\pmb {p_L(t)}$?\glossentry{indInstPower}|setentrycounter[]{page}\glsnumberformat}{3}
+\glossaryentry{$\pmb {p_L(t)}$?\glossentry{indInstPower}|setentrycounter[]{page}\glsnumberformat}{3}
+\glossaryentry{$\pmb {t_o}$?\glossentry{initTime}|setentrycounter[]{page}\glsnumberformat}{3}
+\glossaryentry{$\pmb {t_o}$?\glossentry{initTime}|setentrycounter[]{page}\glsnumberformat}{3}
+\glossaryentry{$\pmb {T}$?\glossentry{timePeriod}|setentrycounter[]{page}\glsnumberformat}{3}
+\glossaryentry{$\pmb {T}$?\glossentry{timePeriod}|setentrycounter[]{page}\glsnumberformat}{3}
+\glossaryentry{$\pmb {V_{RMS}}$?\glossentry{rmsVoltage}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{$\pmb {V_{RMS}}$?\glossentry{rmsVoltage}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{$\pmb {I_{RMS}}$?\glossentry{rmsCurrent}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{$\pmb {I_{RMS}}$?\glossentry{rmsCurrent}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{$\pmb {t_o}$?\glossentry{initTime}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{$\pmb {t_o}$?\glossentry{initTime}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{$\pmb {T}$?\glossentry{timePeriod}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{$\pmb {T}$?\glossentry{timePeriod}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{$\pmb {t}$?\glossentry{instTime}|setentrycounter[]{page}\glsnumberformat}{ii}
+\glossaryentry{$\pmb {T}$?\glossentry{timePeriod}|setentrycounter[]{page}\glsnumberformat}{ii}
+\glossaryentry{$\pmb {t_o}$?\glossentry{initTime}|setentrycounter[]{page}\glsnumberformat}{ii}
+\glossaryentry{$\pmb {v(t)}$?\glossentry{instVoltage}|setentrycounter[]{page}\glsnumberformat}{ii}
+\glossaryentry{$\pmb {v(t_o)}$?\glossentry{initVoltage}|setentrycounter[]{page}\glsnumberformat}{ii}
+\glossaryentry{$\pmb {V}$?\glossentry{avgVoltage}|setentrycounter[]{page}\glsnumberformat}{ii}
+\glossaryentry{$\pmb {V_{RMS}}$?\glossentry{rmsVoltage}|setentrycounter[]{page}\glsnumberformat}{ii}
+\glossaryentry{$\pmb {i(t)}$?\glossentry{instCurrent}|setentrycounter[]{page}\glsnumberformat}{ii}
+\glossaryentry{$\pmb {i(t_o)}$?\glossentry{initCurrent}|setentrycounter[]{page}\glsnumberformat}{ii}
+\glossaryentry{$\pmb {I}$?\glossentry{avgCurrent}|setentrycounter[]{page}\glsnumberformat}{ii}
+\glossaryentry{$\pmb {I_{RMS}}$?\glossentry{rmsCurrent}|setentrycounter[]{page}\glsnumberformat}{ii}
+\glossaryentry{$\pmb {p(t)}$?\glossentry{instPower}|setentrycounter[]{page}\glsnumberformat}{ii}
+\glossaryentry{$\pmb {P}$?\glossentry{avgPower}|setentrycounter[]{page}\glsnumberformat}{ii}
+\glossaryentry{$\pmb {W}$?\glossentry{work}|setentrycounter[]{page}\glsnumberformat}{ii}
+\glossaryentry{$\pmb {L}$?\glossentry{inductance}|setentrycounter[]{page}\glsnumberformat}{ii}
+\glossaryentry{$\pmb {v_L(t)}$?\glossentry{indVoltage}|setentrycounter[]{page}\glsnumberformat}{ii}
+\glossaryentry{$\pmb {V_L}$?\glossentry{indAvgVoltage}|setentrycounter[]{page}\glsnumberformat}{ii}
+\glossaryentry{$\pmb {i_L(t)}$?\glossentry{indCurrent}|setentrycounter[]{page}\glsnumberformat}{ii}
+\glossaryentry{$\pmb {I_L}$?\glossentry{indAvgCurrent}|setentrycounter[]{page}\glsnumberformat}{ii}
+\glossaryentry{$\pmb {p_L(t)}$?\glossentry{indInstPower}|setentrycounter[]{page}\glsnumberformat}{ii}
+\glossaryentry{$\pmb {P_L}$?\glossentry{indAvgPower}|setentrycounter[]{page}\glsnumberformat}{ii}
+\glossaryentry{$\pmb {w_L(t)}$?\glossentry{indInstWork}|setentrycounter[]{page}\glsnumberformat}{ii}
+\glossaryentry{$\pmb {W_L}$?\glossentry{indAvgWork}|setentrycounter[]{page}\glsnumberformat}{ii}
+\glossaryentry{$\pmb {C}$?\glossentry{capacitance}|setentrycounter[]{page}\glsnumberformat}{ii}
+\glossaryentry{$\pmb {v_C(t)}$?\glossentry{capVoltage}|setentrycounter[]{page}\glsnumberformat}{ii}
+\glossaryentry{$\pmb {V_C}$?\glossentry{capAvgVoltage}|setentrycounter[]{page}\glsnumberformat}{ii}
+\glossaryentry{$\pmb {i_C(t)}$?\glossentry{capCurrent}|setentrycounter[]{page}\glsnumberformat}{ii}
+\glossaryentry{$\pmb {I_C}$?\glossentry{capAvgCurrent}|setentrycounter[]{page}\glsnumberformat}{ii}
+\glossaryentry{$\pmb {p_C(t)}$?\glossentry{capInstPower}|setentrycounter[]{page}\glsnumberformat}{ii}
+\glossaryentry{$\pmb {P_C}$?\glossentry{capAvgPower}|setentrycounter[]{page}\glsnumberformat}{ii}
+\glossaryentry{$\pmb {w_L(t)}$?\glossentry{capInstWork}|setentrycounter[]{page}\glsnumberformat}{ii}
+\glossaryentry{$\pmb {W_C}$?\glossentry{capAvgWork}|setentrycounter[]{page}\glsnumberformat}{ii}
+\glossaryentry{$\pmb {P}$?\glossentry{avgPower}|setentrycounter[]{page}\glsnumberformat}{iii}
+\glossaryentry{$\pmb {P_L}$?\glossentry{indAvgPower}|setentrycounter[]{page}\glsnumberformat}{iii}
+\glossaryentry{$\pmb {V_L}$?\glossentry{indAvgVoltage}|setentrycounter[]{page}\glsnumberformat}{iii}
+\glossaryentry{$\pmb {i_L(t)}$?\glossentry{indCurrent}|setentrycounter[]{page}\glsnumberformat}{iii}
+\glossaryentry{$\pmb {p_L(t)}$?\glossentry{indInstPower}|setentrycounter[]{page}\glsnumberformat}{iii}
+\glossaryentry{$\pmb {w_L(t)}$?\glossentry{indInstWork}|setentrycounter[]{page}\glsnumberformat}{iii}
+\glossaryentry{$\pmb {v_L(t)}$?\glossentry{indVoltage}|setentrycounter[]{page}\glsnumberformat}{iii}
+\glossaryentry{$\pmb {L}$?\glossentry{inductance}|setentrycounter[]{page}\glsnumberformat}{iii}
+\glossaryentry{$\pmb {i(t_o)}$?\glossentry{initCurrent}|setentrycounter[]{page}\glsnumberformat}{iii}
+\glossaryentry{$\pmb {i(t)}$?\glossentry{instCurrent}|setentrycounter[]{page}\glsnumberformat}{iii}
+\glossaryentry{$\pmb {p(t)}$?\glossentry{instPower}|setentrycounter[]{page}\glsnumberformat}{iii}
+\glossaryentry{$\pmb {v(t)}$?\glossentry{instVoltage}|setentrycounter[]{page}\glsnumberformat}{iii}
+\glossaryentry{$\pmb {I_{RMS}}$?\glossentry{rmsCurrent}|setentrycounter[]{page}\glsnumberformat}{iii}
+\glossaryentry{$\pmb {V_{RMS}}$?\glossentry{rmsVoltage}|setentrycounter[]{page}\glsnumberformat}{iii}
+\glossaryentry{$\pmb {W}$?\glossentry{work}|setentrycounter[]{page}\glsnumberformat}{iii}

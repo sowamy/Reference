@@ -6,6 +6,7 @@
 \contentsline {subsubsection}{\numberline {1.1.3}Energy}{1}{subsubsection.1.1.3}
 \contentsline {subsection}{\numberline {1.2}Inductors}{2}{subsection.1.2}
 \contentsline {subsubsection}{\numberline {1.2.1}Current/Voltage Relationship}{2}{subsubsection.1.2.1}
-\contentsline {subsection}{\numberline {1.3}RMS Values}{2}{subsection.1.3}
+\contentsline {subsubsection}{\numberline {1.2.2}Power and Energy}{3}{subsubsection.1.2.2}
+\contentsline {subsection}{\numberline {1.3}RMS Values}{4}{subsection.1.3}
 \contentsline {section}{Variables}{i}{section*.1}
 \contentsline {section}{Glossary}{ii}{section*.2}
